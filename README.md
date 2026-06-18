@@ -12,22 +12,8 @@ Following a fundamentals-first learning approach, this build uses kubeadm to con
 
 ## Architecture
 
-```
-                    ┌────────────────────────────┐
-                    │   k8s-master (t2.medium)    │
-                    │   Control plane:            │
-                    │   API server, scheduler,    │
-                    │   etcd, controller manager  │
-                    └──────────────┬─────────────┘
-                                   │ (private network, port 6443)
-                 ┌─────────────────┴─────────────────┐
-                 │                                   │
-    ┌────────────────────────┐         ┌────────────────────────┐
-    │  k8s-worker-1           │         │  k8s-worker-2           │
-    │  Runs pods              │         │  Runs pods              │
-    │  Pod network 10.244.1.x │         │  Pod network 10.244.2.x │
-    └────────────────────────┘         └────────────────────────┘
-```
+<img width="1536" height="1024" alt="ChatGPT Image Jun 18, 2026, 09_04_39 AM" src="https://github.com/user-attachments/assets/ec1dd725-9592-42fa-b633-a4185045a9ab" />
+
 
 ---
 
