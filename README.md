@@ -201,24 +201,6 @@ The -o wide flag shows a NODE column. With 4 replicas across 2 workers, the pods
 <img width="747" height="182" alt="kube multinode" src="https://github.com/user-attachments/assets/954d6ca6-e99e-4453-a6a8-b431e0b73dba" />
 
 
-### Cluster Nodes (all three Ready)
-<!-- Shows the master and two workers all in Ready state on the same version -->
-```
-![Cluster nodes all Ready](screenshots/get-nodes.png)
-```
-
-### Pods Scheduled Across Workers
-<!-- The key screenshot: nginx pods distributed across worker-1 and worker-2 -->
-```
-![Pods spread across workers](screenshots/get-pods-wide.png)
-```
-
-### Master Initialization
-<!-- Optional: the successful kubeadm init output / join command -->
-```
-![kubeadm init success](screenshots/kubeadm-init.png)
-```
-
 To embed an image: place the file in the screenshots folder, then replace the code block above with the image line itself (remove the surrounding backticks). For example, a line reading `![Cluster nodes all Ready](screenshots/get-nodes.png)` will render the image inline on GitHub.
 
 ---
